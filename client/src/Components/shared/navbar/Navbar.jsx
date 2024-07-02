@@ -1,63 +1,38 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import SecondNavbar from "./small_Nav";
 
 function Navbar() {
   return (
-    <div className="bg-white sticky top-0 z-50">
-      <header className="relative bg-white">
-        <nav
-          aria-label="Top"
-          className="bg-gray-100 px-2 sm:px-6 lg:px-8 shadow-xl "
-        >
-          <div className="flex flex-row h-20 justify-between items-center">
-            {/* Logo */}
-            <div className="flex lg:ml-0">
-              <Link to={"/home"} className="flex">
-                <div className="flex ">
-                  <h1 className=" text-2xl font-bold text-black  px-2 py-1 rounded">
-                    E-Commerce
-                  </h1>
+    <>
+      <div className="bg-white sticky top-0 z-50">
+        <header className="relative bg-white">
+          <nav
+            aria-label="Top"
+            className="bg-gray-100 px-2 sm:px-6 lg:px-8 shadow-xl "
+          >
+            <div className="flex flex-row h-20 justify-between items-center">
+              {/* Logo */}
+              <div className="flex lg:ml-0">
+                <Link to={"/home"} className="flex">
+                  <div className="flex ">
+                    <h1 className=" text-2xl font-bold text-black  px-2 py-1 rounded">
+                      E-Commerce
+                    </h1>
+                  </div>
+                </Link>
+              </div>
+
+              <nav className="ml-auto flex gap-4 items-center justify-center">
+                <button className="font-bold bg-primary text-white hover:bg-white hover:text-primary py-3 text-center w-full lg:w-[15em] rounded-md">
+                  Browse Categories
+                </button>
+                <div>
+                  <input className="border text-black p-3 w-full lg:w-[15em] rounded-sm" />
                 </div>
-              </Link>
-            </div>
+              </nav>
 
-            <nav className="ml-auto md:flex items-center hidden">
-              <ul className="flex flex-1 items-center justify-end space-x-6">
-                <Link
-                  to={"/home"}
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Home
-                </Link>
-                <Link
-                  to={"/shop"}
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Shop
-                </Link>
-                <Link
-                  to={"/about"}
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  About us
-                </Link>
-                <Link
-                  to={"/contact"}
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Contact us
-                </Link>
-                <Link
-                  to={"/tools"}
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Tools
-                </Link>
-              </ul>
-            </nav>
-
-            <div className="ml-auto flex items-center justify-center gap-3">
-              <div className="flex text-[20px] items-center justify-center gap-8">
+              <div className="ml-auto flex bg-gray-200 px-4 pt-3 pb-2 text-[20px] items-center justify-center gap-3 rounded-md">
                 <Link to={"/"} className="hidden">
                   <ion-icon name="person-outline"></ion-icon>
                 </Link>
@@ -72,10 +47,11 @@ function Navbar() {
                 </Link>
               </div>
             </div>
-          </div>
-        </nav>
-      </header>
-    </div>
+          </nav>
+        </header>
+        <SecondNavbar />
+      </div>
+    </>
   );
 }
 

@@ -24,7 +24,7 @@ function TopPicks() {
   }, []);
 
   return (
-    <section className="flex flex-row w-full gap-5 bg-[#fff] py-[5em] md:px-[3em] py-12 overflow-x-auto items-center justify-center">
+    <section className="flex flex-row w-full gap-5 bg-[#fff] py-[5em] md:px-[3em] py-8 overflow-x-auto items-center justify-center">
       <Swiper
         slidesPerview={1.2}
         spaceBetween={20}
