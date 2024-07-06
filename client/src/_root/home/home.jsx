@@ -4,7 +4,7 @@ import Hero from "../../Components/shared/hero/home";
 import Section_One from "./sec_one";
 import Footer from "../../Components/shared/footer/Footer";
 import TopPicks from "./TrendingProducts";
-import Shell from "./Shell";
+import Shell from "./categories";
 import Social from "./social";
 import Blogs from "./blogs";
 

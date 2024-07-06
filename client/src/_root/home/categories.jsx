@@ -2,7 +2,7 @@ import React from "react";
 import Asgaard from "../../assets/images/Asgaard.png";
 import { Link } from "react-router-dom";
 
-function Shell() {
+function Categories() {
   return (
     <div className="bg-[#A5A5A5]">
       <section className="flex py-[5em] md:py-[2em] mx-5 md:mx-12 lg:flex-row flex-col items-center justify-center">
@@ -24,4 +24,4 @@ function Shell() {
   );
 }
 
-export default Shell;
+export default Categories;

@@ -19,22 +19,22 @@ function SecondNavbar() {
             Shop
           </Link>
           <Link
-            to={"/about"}
+            to={"/page"}
             className="text-base font-medium text-gray-900 hover:text-gray-700"
           >
-            About us
+            Pages +
+          </Link>
+          <Link
+            to={"/blogs"}
+            className="text-base font-medium text-gray-900 hover:text-gray-700"
+          >
+            Blogs
           </Link>
           <Link
             to={"/contact"}
             className="text-base font-medium text-gray-900 hover:text-gray-700"
           >
             Contact us
-          </Link>
-          <Link
-            to={"/tools"}
-            className="text-base font-medium text-gray-900 hover:text-gray-700"
-          >
-            Tools
           </Link>
         </ul>
       </nav>

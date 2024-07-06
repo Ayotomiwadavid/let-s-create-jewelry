@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper";
+import ProductCard from "../shop/productCard.jsx";
+import { Link } from "react-router-dom";
 import fetchAllProducts from "../../utils/Products/GetAllProducts.js";
 
-function TopPicks() {
+export default function ProductListing() {
   const [products, setProducts] = useState([]);
-  const navigate = useNavigate();
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchProductData = async () => {
@@ -17,6 +14,8 @@ function TopPicks() {
         setProducts(allProducts);
       } catch (error) {
         console.error("Error fetching Products", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -24,48 +23,24 @@ function TopPicks() {
   }, []);
 
   return (
-    <section className="flex flex-row w-full gap-5 bg-[#fff] py-[5em] md:px-[3em] py-8 overflow-x-auto items-center justify-center">
-      <Swiper
-        slidesPerview={1.2}
-        spaceBetween={20}
-        breakpoints={{
-          799: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        }}
-        loop={true}
-        autoplay={{
-          delay: 3000,
-        }}
-        // pagination={{
-        //   clickable: false,
-        // }}
-        modules={[Pagination, Autoplay]}
-      >
-        {products.map((product) => (
-          <SwiperSlide key={product.id}>
-            <div className="flex flex-col items-center justify-center">
-              <img className="w-64 md:w-84 h-64 relative" src={product.image} />
-              <div className="text-left">
-                <h1 className="w-[14em] text-lg mt-5 truncate font-semibold text-gray-800">
-                  {product.title}
-                </h1>
-                <button
-                  onClick={() => navigate(`/products/${product.id}`)}
-                  className="text-gray-700 hover:border-b border-black text-lg"
-                >
-                  View More
-                </button>
-              </div>
-            </div>
-          </SwiperSlide>
+    <>
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-16 mt-20">
+        {products.slice(0, 8).map((product) => (
+          <ProductCard key={product.id} product={product} />
         ))}
-      </Swiper>
-    </section>
+      </div>
+      {isLoading ? (
+        <div className="flex gap-3 my-12 justify-center items-center">
+          <div className="animate-spin rounded-full h-5 w-5 border-b-4 border-black"></div>
+          Loading...
+        </div>
+      ) : null}
+
+      <Link to="/shop">
+        <button className="font-bold bg-primary text-white hover:bg-gray-50 hover:text-primary text-[15px] py-3 mt-8 mb-12 rounded-lg text-center w-full lg:w-[8em]">
+          VEIW ALL
+        </button>
+      </Link>
+    </>
   );
 }
-
-export default TopPicks;
