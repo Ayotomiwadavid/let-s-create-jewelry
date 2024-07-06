@@ -15,11 +15,7 @@ function Navbar() {
               {/* Logo */}
               <div className="flex lg:ml-0">
                 <Link to={"/home"} className="flex">
-                  <div className="flex ">
-                    <h1 className=" text-2xl font-bold text-black  px-2 py-1 rounded">
-                      E-Commerce
-                    </h1>
-                  </div>
+                  <img src="/assets/logo.svg" className="flex "/>
                 </Link>
               </div>
 

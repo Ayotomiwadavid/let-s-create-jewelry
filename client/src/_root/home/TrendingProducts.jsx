@@ -37,7 +37,7 @@ export default function ProductListing() {
       ) : null}
 
       <Link to="/shop">
-        <button className="font-bold bg-primary text-white hover:bg-gray-50 hover:text-primary text-[15px] py-3 mt-8 mb-12 rounded-lg text-center w-full lg:w-[8em]">
+        <button className="font-bold bg-primary text-white hover:bg-gray-50 hover:text-primary text-[15px] py-3 mt-8 mb-12 rounded-lg text-center w-[8em]">
           VEIW ALL
         </button>
       </Link>

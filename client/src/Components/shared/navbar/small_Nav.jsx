@@ -19,18 +19,6 @@ function SecondNavbar() {
             Shop
           </Link>
           <Link
-            to={"/page"}
-            className="text-base font-medium text-gray-900 hover:text-gray-700"
-          >
-            Pages +
-          </Link>
-          <Link
-            to={"/blogs"}
-            className="text-base font-medium text-gray-900 hover:text-gray-700"
-          >
-            Blogs
-          </Link>
-          <Link
             to={"/contact"}
             className="text-base font-medium text-gray-900 hover:text-gray-700"
           >
@@ -39,7 +27,7 @@ function SecondNavbar() {
         </ul>
       </nav>
 
-      <select className="ml-auto flex border p-3 text-[20px] items-center justify-center rounded-md">
+      <select className="ml-auto flex border-l pl-3 text-[20px] outline-none items-center justify-center">
         <option>Recently Viewed</option>
       </select>
     </header>
