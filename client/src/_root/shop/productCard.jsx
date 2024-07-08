@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function productCard({ product }) {
+export default function productCard({ product, sold }) {
   const navigate = useNavigate();
 
   return (
@@ -17,9 +17,12 @@ export default function productCard({ product }) {
         />
       </div>
       <div className="text-left">
-        <h1 className="text-sm truncate font-semibold text-gray-800">{product.title}</h1>
+        <p className="text-gray-300 text-lg"><del>${product.price}</del> <span className="text-primary">${product.price - 12}</span></p>
+        <h1 className="text-sm truncate font-semibold text-gray-800">
+          {product.title}
+        </h1>
         <p className="text-sm text-gray-500 truncate">{product.description}</p>
-        <p className="text-gray-700 text-lg">Rs. {product.price}</p>
+        <p className="text-gray-700 text-lg">{sold}</p>
       </div>
     </div>
   );

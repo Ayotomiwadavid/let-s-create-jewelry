@@ -4,23 +4,85 @@ import { Link } from "react-router-dom";
 
 function Categories() {
   return (
-    <div className="bg-[#A5A5A5]">
-      <section className="flex py-[5em] md:py-[2em] mx-5 md:mx-12 lg:flex-row flex-col items-center justify-center">
-        <div className="flex-1 lg:flex hidden items-center justify-center">
-          <div className="flex-1 flex justify-center items-center">
-            <img className="lg:w-[100%] h-[25em] relative" src={Asgaard} />
+    <section className="bg-primary bg-opacity-20  text-black p-4 px-5 md:px-12">
+      <div className="flex flex-col text-center mx-auto mt-8 font-bold text-[30px] items-center justify-center">
+        <div>Shop by categories</div>
+        <img
+          className="w-[220px] h-[165px] mt-[-5rem] items-center justify-center"
+          src="/assets/icons/categories_ic.svg"
+        />
+      </div>
+
+      <div className="flex py-[2em] md:py-0 lg:flex-row flex-col items-center justify-between">
+        <div className="flex flex-col gap-3 items-start justify-start">
+          <img
+            className="w-[120px] h-[115px] bg-white rounded-full relative"
+            src="/assets/icons/ring-1.svg"
+          />
+          <div>
+            <span className="text-2xl font-bold font-['Cormorant']">
+              Rings
+              <br />
+            </span>
+            <span className="text-2xl font-bold font-['Cormorant']">
+              7 products
+            </span>
           </div>
         </div>
 
-        <div className="flex-1 flex flex-col items-center justify-center">
-          <div className="text-[15px] font-bold">New Arrivals</div>
-          <div className="text-[40px] font-bold">Shell Engine Oil</div>
-          <Link to={"/shop"} className="font-bold bg-white text-black hover:bg-black hover:text-white py-3 mt-8 rounded-full text-center w-full lg:w-[15em]">
-            Shop Now
-          </Link>
+        <div className="flex flex-col gap-3 items-start justify-start">
+          <img
+            className="w-[120px] h-[115px] bg-white rounded-full relative"
+            src="/assets/icons/ring-1.svg"
+          />
+          <div>
+            <span className="text-2xl font-bold font-['Cormorant']">
+              Rings
+              <br />
+            </span>
+            <span className="text-2xl font-bold font-['Cormorant']">
+              7 products
+            </span>
+          </div>
         </div>
-      </section>
-    </div>
+
+        <div className="flex flex-col gap-3 items-start justify-start">
+          <img
+            className="w-[120px] h-[115px] bg-white rounded-full relative"
+            src="/assets/icons/ring-1.svg"
+          />
+          <div>
+            <span className="text-2xl font-bold font-['Cormorant']">
+              Rings
+              <br />
+            </span>
+            <span className="text-2xl font-bold font-['Cormorant']">
+              7 products
+            </span>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-3 items-start justify-start">
+          <img
+            className="w-[120px] h-[115px] bg-white rounded-full relative"
+            src="/assets/icons/ring-1.svg"
+          />
+          <div>
+            <span className="text-2xl font-bold font-['Cormorant']">
+              Rings
+              <br />
+            </span>
+            <span className="text-2xl font-bold font-['Cormorant']">
+              7 products
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full text-white/opacity-60 text-[83px] font-bold font-['Cormorant']">
+        WE ARE HERE, FOR{" "} YOU
+      </div>
+    </section>
   );
 }
 
