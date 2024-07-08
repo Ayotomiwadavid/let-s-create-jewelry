@@ -18,8 +18,7 @@ const SigninForm = () => {
 
   return (
     <>
-      <Navbar />
-      <div className="flex flex-row ml-12">
+      <div className="flex flex-row mx-12 justify-center items-center">
         <div className="flex flex-col gap-5 ml-12 my-12 w-full">
           <h2 className="text-[30px] text-black font-bold pt-5 sm:pt-12">
             Log in to your account
@@ -71,7 +70,7 @@ const SigninForm = () => {
               Don&apos;t have an account?
               <Link
                 to="/sign-up"
-                className="text-[blue] text-small-semibold ml-1"
+                className="text-primary text-small-semibold ml-1"
               >
                 Sign up
               </Link>

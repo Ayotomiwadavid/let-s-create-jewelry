@@ -19,7 +19,6 @@ const SignupForm = () => {
 
   return (
     <>
-      <Navbar />
       <div className="flex flex-row ml-12">
         <div className="flex flex-col gap-5 ml-12 my-12 w-full">
           <h2 className="text-[30px] text-black font-bold pt-5 sm:pt-12">
@@ -95,7 +94,7 @@ const SignupForm = () => {
 
             <p className="text-small-regular text-light-2 text-left mt-2">
               Already have an account?
-              <Link to="/" className="text-[blue] text-small-semibold ml-1">
+              <Link to="/" className="text-primary text-small-semibold ml-1">
                 Log in
               </Link>
             </p>
