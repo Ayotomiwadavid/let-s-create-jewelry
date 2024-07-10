@@ -15,7 +15,7 @@ function Navbar() {
               {/* Logo */}
               <div className="flex lg:ml-0">
                 <Link to={"/home"} className="flex">
-                  <img src="/assets/logo.svg" className="flex "/>
+                  <img src="/assets/logo.svg" className="flex " />
                 </Link>
               </div>
 
@@ -23,13 +23,18 @@ function Navbar() {
                 <button className="font-bold bg-primary text-white hover:bg-white hover:text-primary py-3 text-center w-full lg:w-[15em] rounded-md">
                   Browse Categories
                 </button>
-                <div>
-                  <input className="border text-black p-3 w-full lg:w-[15em] rounded-sm" />
+
+                <div className="flex bg-white border p-2.5 items-center rounded-md focus-within:ring-1 ring-primary">
+                  {/* <select className="ml-auto flex border p-3 text-[15px] outline-none items-center justify-center">
+                    <option>All Categories</option>
+                  </select> */}
+                  <input className="text-black w-full lg:w-[15em] outline-none rounded-sm" placeholder="I’am looking for..........." />
+                  <div><ion-icon name="search-outline"></ion-icon></div>
                 </div>
               </nav>
 
-              <div className="ml-auto flex bg-gray-200 px-4 pt-3 pb-2 text-[20px] items-center justify-center gap-3 rounded-md">
-                <Link to={"/"} className="hidden">
+              <div className="ml-auto flex bg-gray-200 px-4 pt-3 pb-2 text-[20px] items-center justify-center gap-4 rounded-md">
+                <Link to={"/"} className="">
                   <ion-icon name="person-outline"></ion-icon>
                 </Link>
                 <Link to={"/"} className="hidden">

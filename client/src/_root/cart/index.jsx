@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../Components/shared/navbar/Navbar'
-import Cart_Hero from '../../Components/shared/hero/Cart'
+import Cart_Hero from '../../Components/shared/hero/hero'
 import Cart from './cart'
 import Cart_Section from './section'
 import Footer from '../../Components/shared/footer/Footer'

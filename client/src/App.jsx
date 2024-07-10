@@ -5,6 +5,7 @@ import SignUp from "./Auths/signup";
 import Home from "./_root/Home/home";
 import Cart from "./_root/cart/index";
 import CheckOut from "./_root/CheckOut/index";
+import Contact from "./_root/Contact/index";
 import Shop from "./_root/shop/index";
 import ProductDetail from "./_root/productDetail/index";
 import ScrollToTop from "./BackToTop/ScrollToTop";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<CheckOut />} />
+        <Route path="/contact-us" element={<Contact />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/products/:productId" element={<ProductDetail />} />
       </Routes>
