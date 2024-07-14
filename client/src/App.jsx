@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import SignIn from "./Auths/signin";
 import SignUp from "./Auths/signup";
-import Home from "./_root/Home/index";
+import Home from "./_root/home/index";
 import Cart from "./_root/cart/index";
 import CheckOut from "./_root/CheckOut/index";
 import Contact from "./_root/Contact/index";

@@ -11,11 +11,11 @@ function Categories() {
         />
       </div>
 
-      <div className="flex py-[2em] md:py-0 lg:flex-row flex-col items-center justify-between">
+      <div className="flex grid grid-cols-2 lg:grid-cols-4 gap-4 mx-3 gap-3 items-center justify-center">
         <div className="flex flex-col gap-3 items-start justify-start">
           <img
-            className="w-[120px] h-[115px] bg-white rounded-full relative"
-            src="/assets/icons/ring-1.svg"
+            className="w-[120px] h-[115px] p-3 bg-white rounded-full relative"
+            src="/assets/imgs/ring-1.png"
           />
           <div>
             <span className="text-2xl font-bold font-['Cormorant']">
@@ -30,8 +30,8 @@ function Categories() {
 
         <div className="flex flex-col gap-3 items-start justify-start">
           <img
-            className="w-[120px] h-[115px] bg-white rounded-full relative"
-            src="/assets/icons/ring-1.svg"
+            className="w-[120px] h-[115px] p-3 bg-white rounded-full relative"
+            src="/assets/imgs/ring-1.png"
           />
           <div>
             <span className="text-2xl font-bold font-['Cormorant']">
@@ -46,8 +46,8 @@ function Categories() {
 
         <div className="flex flex-col gap-3 items-start justify-start">
           <img
-            className="w-[120px] h-[115px] bg-white rounded-full relative"
-            src="/assets/icons/ring-1.svg"
+            className="w-[120px] h-[115px] p-3 bg-white rounded-full relative"
+            src="/assets/imgs/ring-1.png"
           />
           <div>
             <span className="text-2xl font-bold font-['Cormorant']">
@@ -62,8 +62,8 @@ function Categories() {
 
         <div className="flex flex-col gap-3 items-start justify-start">
           <img
-            className="w-[120px] h-[115px] bg-white rounded-full relative"
-            src="/assets/icons/ring-1.svg"
+            className="w-[120px] h-[115px] p-3 bg-white rounded-full relative"
+            src="/assets/imgs/ring-1.png"
           />
           <div>
             <span className="text-2xl font-bold font-['Cormorant']">
