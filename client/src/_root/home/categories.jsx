@@ -1,6 +1,4 @@
 import React from "react";
-import Asgaard from "../../assets/images/Asgaard.png";
-import { Link } from "react-router-dom";
 
 function Categories() {
   return (

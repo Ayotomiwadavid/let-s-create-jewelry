@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import Navbar from "../Components/shared/navbar/Navbar";
-import Footer from "../Components/shared/footer/Footer";
+import Navbar from "../Components/shared/Navbar/navbar";
+import Footer from "../Components/shared/Footer/footer";
 
 const SignupForm = () => {
   const navigate = useNavigate();

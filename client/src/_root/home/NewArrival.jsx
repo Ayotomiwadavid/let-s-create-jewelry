@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "../shop/productCard.jsx";
-import fetchAllProducts from "../../utils/Products/GetAllProducts.js";
+import ProductCard from "../shop/productCard";
+import fetchAllProducts from "../../utils/Products/GetAllProducts";
 
 function NewArrival() {
   const [products, setProducts] = useState([]);

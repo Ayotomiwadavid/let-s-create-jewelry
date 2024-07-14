@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../../Components/shared/navbar/Navbar";
+import Navbar from "../../Components/shared/Navbar/navbar";
 import Shop_Hero from "../../Components/shared/hero/hero";
 import ProductListing from "./productListing";
-import Footer from "../../Components/shared/footer/Footer";
+import Footer from "../../Components/shared/Footer/footer";
 
 export default function CartPage() {
   return (

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "../shop/productCard.jsx";
 import { Link } from "react-router-dom";
-import fetchAllProducts from "../../utils/Products/GetAllProducts.js";
+import ProductCard from "../shop/productCard";
+import fetchAllProducts from "../../utils/Products/GetAllProducts";
 
-export default function ProductListing() {
+export default function TrendingProducts() {
   const [products, setProducts] = useState([]);
   const [isLoading, setLoading] = useState(true);
 
