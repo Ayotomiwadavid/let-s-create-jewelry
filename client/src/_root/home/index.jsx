@@ -4,7 +4,7 @@ import Hero from "../../Components/shared/hero/home";
 import Section_One from "./sec_one";
 import Section_Two from "./sec_two";
 import DealOfTheDay from "./DealOfTheDay";
-import TrendingProducts from "./trending_products";
+import TrendingProducts from "./TrendingProducts";
 import Categories from "./categories";
 import NewArrival from "./new_arrival";
 import Footer from "../../Components/shared/Footer/footer";
