@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import Social from "./social";
+import Social from "./Social_";
 
 function Footer() {
   return (

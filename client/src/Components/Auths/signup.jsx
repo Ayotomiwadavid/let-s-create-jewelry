@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 // import { toast } from "react-toastify";
-import Footer from "../shared/Footer/footer";
+import Footer from "../shared/Footer";
 
 const SignupForm = () => {
   const navigate = useNavigate();

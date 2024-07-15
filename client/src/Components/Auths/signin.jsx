@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Footer from "../shared/Footer/footer";
+import Footer from "../shared/Footer";
 // import { toast } from "react-toastify";
 
 const SigninForm = () => {

@@ -3,7 +3,7 @@ import ContactHero from "../../shared/hero/hero";
 import Navbar from "../../shared/Navbar/navbar";
 import Address from "./address";
 import MessageBox from "./messageBox";
-import Footer from "../../shared/Footer/footer";
+import Footer from "../../shared/Footer";
 
 export default function ContactPage() {
   return (

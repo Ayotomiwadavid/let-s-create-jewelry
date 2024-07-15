@@ -3,7 +3,7 @@ import Cart from './cart'
 import Cart_Section from './section'
 import Navbar from '../../shared/Navbar/navbar'
 import Cart_Hero from '../../shared/hero/hero'
-import Footer from '../../shared/Footer/footer'
+import Footer from '../../shared/Footer'
 
 export default function CartPage() {
   return (
