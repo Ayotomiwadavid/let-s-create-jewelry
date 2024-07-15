@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import SecondNavbar from "./small_Nav";
+import SecondNavbar from "./Small_Nav";
 
 function Navbar() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../../shared/Navbar/navbar'
+import Navbar from '../../shared/Navbar'
 import Cart_Hero from '../../shared/hero/hero'
 import Footer from '../../shared/Footer'
 import ShippingDetails from './FormField'

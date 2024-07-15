@@ -1,7 +1,7 @@
 import React from 'react'
 import Cart from './cart'
 import Cart_Section from './section'
-import Navbar from '../../shared/Navbar/navbar'
+import Navbar from '../../shared/Navbar'
 import Cart_Hero from '../../shared/hero/hero'
 import Footer from '../../shared/Footer'
 

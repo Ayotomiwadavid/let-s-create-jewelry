@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../shared/Navbar/navbar";
+import Navbar from "../../shared/Navbar";
 import Hero from "../../shared/hero/home";
 import Section_One from "./sec_one";
 import Section_Two from "./sec_two";

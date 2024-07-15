@@ -1,6 +1,6 @@
 import React from "react";
 import ContactHero from "../../shared/hero/hero";
-import Navbar from "../../shared/Navbar/navbar";
+import Navbar from "../../shared/Navbar";
 import Address from "./address";
 import MessageBox from "./messageBox";
 import Footer from "../../shared/Footer";
