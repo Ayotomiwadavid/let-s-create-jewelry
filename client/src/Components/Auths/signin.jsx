@@ -1,57 +1,31 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Footer from "../shared/Footer/footer";
 // import { toast } from "react-toastify";
-import Footer from "../Components/shared/Footer/footer";
 
-const SignupForm = () => {
+const SigninForm = () => {
   const navigate = useNavigate();
-  const [name, setName] = useState("");
-  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setLoading] = useState(false);
 
-  // ============================== SIGN UP
-  const createUserAccount = async () => {
+  // ============================== SIGN IN
+
+  const signInAccount = async () => {
    
   };
 
   return (
     <>
-      <div className="flex flex-row ml-12">
+      <div className="flex flex-row mx-12 justify-center items-center">
         <div className="flex flex-col gap-5 ml-12 my-12 w-full">
           <h2 className="text-[30px] text-black font-bold pt-5 sm:pt-12">
-            Create a new account
+            Log in to your account
           </h2>
           <p className="text-primary_A2 small-medium md:base-regular mt-2">
-            To use Ecommerce, Please enter your details
+            Welcome back! Please enter your details.
           </p>
-
           <div className="flex flex-col gap-5 w-full mt-4">
-            <div>
-              <label>Name</label>
-              <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Akorede Salaudeen"
-                className="border rounded p-2 w-full"
-                required
-              />
-            </div>
-
-            <div>
-              <label>Username</label>
-              <input
-                type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                placeholder="akorede123"
-                className="border rounded p-2 w-full"
-                required
-              />
-            </div>
-
             <div>
               <label>Email</label>
               <input
@@ -78,7 +52,7 @@ const SignupForm = () => {
 
             <button
               type="submit"
-              onClick={createUserAccount}
+              onClick={signInAccount}
               className="bg-black text-white p-3 rounded-md"
             >
               {isLoading ? (
@@ -87,14 +61,17 @@ const SignupForm = () => {
                   Loading...
                 </div>
               ) : (
-                "Sign Up"
+                "Log in"
               )}
             </button>
 
             <p className="text-small-regular text-light-2 text-left mt-2">
-              Already have an account?
-              <Link to="/" className="text-primary text-small-semibold ml-1">
-                Log in
+              Don&apos;t have an account?
+              <Link
+                to="/sign-up"
+                className="text-primary text-small-semibold ml-1"
+              >
+                Sign up
               </Link>
             </p>
           </div>
@@ -106,4 +83,4 @@ const SignupForm = () => {
   );
 };
 
-export default SignupForm;
+export default SigninForm;

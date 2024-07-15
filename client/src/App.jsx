@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import SignIn from "./Auths/signin";
-import SignUp from "./Auths/signup";
-import Home from "./Components/home/index";
-import Cart from "./_root/cart/index";
-import CheckOut from "./_root/CheckOut/index";
-import Contact from "./_root/Contact/index";
-import Shop from "./_root/shop/index";
-import ProductDetail from "./_root/productDetail/index";
+import SignIn from "./Components/Auths/signin";
+import SignUp from "./Components/Auths/signup";
+import Home from "./Components/_root/home/index";
+import Cart from "./Components/_root/cart/index";
+import CheckOut from "./Components/_root/CheckOut/index";
+import Contact from "./Components/_root/Contact/index";
+import Shop from "./Components/_root/shop/index";
+import ProductDetail from "./Components/_root/productDetail/index";
 import ScrollToTop from "./BackToTop/ScrollToTop";
 
 function App() {

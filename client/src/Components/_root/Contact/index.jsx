@@ -1,9 +1,9 @@
 import React from "react";
-import ContactHero from "../../Components/shared/hero/hero";
-import Navbar from "../../Components/shared/Navbar/navbar";
+import ContactHero from "../../shared/hero/hero";
+import Navbar from "../../shared/Navbar/navbar";
 import Address from "./address";
 import MessageBox from "./messageBox";
-import Footer from "../../Components/shared/Footer/footer";
+import Footer from "../../shared/Footer/footer";
 
 export default function ContactPage() {
   return (

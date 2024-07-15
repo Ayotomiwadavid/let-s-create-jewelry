@@ -1,5 +1,5 @@
 import React from "react";
-import addToCart from "../../utils/Products/AddToCart";
+import addToCart from "../../../utils/Products/AddToCart";
 export default function CartPage({ product, quantity }) {
   const handleClick = () => {
     // Create an object containing both product data and quantity

@@ -1,6 +1,6 @@
 import React from "react";
-import Addr from "../../assets/images/addr.png";
-import Map from "../../assets/images/map.png";
+import Addr from "../../../assets/images/addr.png";
+import Map from "../../../assets/images/map.png";
 
 export default function Address() {
   return (

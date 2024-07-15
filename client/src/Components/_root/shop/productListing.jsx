@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "./productCard";
-import fetchAllProducts from '../../utils/Products/GetAllProducts'
+import fetchAllProducts from '../../../utils/Products/GetAllProducts'
 import FilterBar from "./filterBar";
 
 export default function productListing() {

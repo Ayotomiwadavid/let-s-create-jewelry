@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../../Components/shared/Navbar/navbar";
-import Footer from "../../Components/shared/Footer/footer";
+import Navbar from "../../shared/Navbar/navbar";
+import Footer from "../../shared/Footer/footer";
 import ProductDisplay from "./product_display";
 export default function CartPage() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import getCartItems from "../../utils/Products/FetchCart";
+import getCartItems from "../../../utils/Products/FetchCart";
 
 export default function Cart() {
   const [products, setProducts] = useState([]);

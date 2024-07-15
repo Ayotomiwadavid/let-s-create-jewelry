@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import fetchProductById from "../../utils/Products/GetProductById";
+import fetchProductById from "../../../utils/Products/GetProductById";
 import { useParams } from "react-router-dom";
-import removeBackground from "../../utils/Products/removeImageBackground";
-import Add_to_cart from "../productDetail/add_to_cart";
+import Add_to_cart from "./add_to_cart";
 
 export default function ProductDisplay() {
   const [product, setProduct] = useState(null);
